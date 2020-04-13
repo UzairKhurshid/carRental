@@ -1,0 +1,164 @@
+/*----------------------------------------
+    Login Page
+------------------------------------------*/
+.login-bg
+{
+    background-image: url('../../images/gallery/flat-bg.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+
+#login-page
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+
+    height: 100vh; 
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+#login-page .card-panel.border-radius-6.login-card
+{
+    margin-left: 0 !important;
+}
+
+
+
+
+
+
+/*-----------------------------------------------login.................*/
+
+alternate infinite;
+    transition: all 2s ease;
+}
+
+button {
+    border:0;
+float:left;
+    
+}
+
+#result {
+    display:block;
+    font-family: sans-serif;
+    width:260px;
+    height:50px;
+    margin:20px auto;
+    text-align: right;
+    border:0;
+    background:#DC143C;
+    color:#fff;
+    padding-top:20px;
+    font-size:20px;
+    margin-left: 25px;
+    outline: none;
+    overflow: hidden;
+    letter-spacing: 4px;
+    position: relative;
+    top:40px;
+}
+
+#result:hover {
+    
+    cursor: text;
+    
+}
+
+#first-rows {
+
+    margin-bottom: 20px;
+    position: relative;
+    top:10px;
+}
+
+.rows {
+    width:400px;
+    margin-top:10px;
+}
+
+
+
+/* Aligning the division and dot button properly */
+.fall-back {
+    margin-left:3px !important;
+}
+
+/* Aligning the addition and equals to button properly */
+.align {
+    margin-left: 6px !important;
+}
+
+/* Button styling */
+.btn-style {
+    width:20px;
+    height:80px;
+    margin-left:5px;
+    border-radius:4px;
+}
+
+.eqn {
+    width:50px;
+    height:50px;
+    margin-left:5px;
+    border-radius:4px;
+}
+
+.first-child {
+ margin-left:25px;
+}
+
+
+/* Adding background color to the number values */
+ .num-bg {
+    background:#DC143C;
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+    outline:none;
+    border-bottom:3px solid red;
+}
+
+ .num-bg:active {
+    background:#000;
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+    outline:none;
+    box-shadow: inset 5px 5px 5px #555;
+}
+
+
+
+@-webkit-keyframes bgChange {
+    0% {
+       background:#24b4de; 
+    }
+    
+    50% {
+      background:#17a928;
+    }
+    
+    100% {
+        background:#399cb9;
+    }
+}
+
+
+
+
+
+/*--------------------------------------------------------------------login end--------*/
