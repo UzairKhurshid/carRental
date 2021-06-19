@@ -1,24 +1,30 @@
-#Job Board
+require('dotenv').config()
+require('./db/index')
+const express=require('express')
+const http = require('http')
+const socketio = require('socket.io')
+const bodyParser=require('body-parser')
+const path=require('path')
+var cors = require('cors')
+const hbs=require('hbs')
 
-## About
-This is a little project I put together using the PHP framework CodeIgniter. 
+const app=express()
+const server = http.createServer(app)
+const io = socketio(server)
+const PORT=process.env.PORT || 3000
 
-## Features Implemented
- * Create Job
- * Edit Job
- * Delete Job
- * Using CodeIgniter Security class add XSS and CSRF
- * User Registration/Login
- * Contact Page
- * Pagination For Jobs 
- * View Jobs by city and category
- * Password Reset Using unique token
- * Add cookies
- * User Account Page
- * Delete account and all posts
- * Set up querystrings
- * Add google maps to contact page
-## Features To Implemented 
- * Styling
 
- * And more to come...
+const publicDirectory=path.join(__dirname,'../public')
+const viewsDirectory=path.join(__dirname,'../views')
+
+app.set('view engine', 'hbs');
+app.set('views',viewsDirectory)
+app.use(express.static(publicDirectory))
+
+app.use(cors())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+app.use(express.static(path.join(__dirname,'../../public')));
+
+
+
